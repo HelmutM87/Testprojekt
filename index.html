@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notizblock</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <link rel="icon" type="image/vnd.microsoft.icon" href="./icon/favicon.ico">
+</head>
+
+<body onload="renderNotePad()">
+  <div class="headline"><img src="./icon/android-chrome-192x192.png">Notizen</div>
+  <div id="dialog" class="dialog-bg d-none" onclick="closeDialog()">
+    <div class="dialog">
+      <h1>Beide Felder ausfüllen!</h1>
+      <p>Bitte fülle jeweils das Textfeld für den Titel und für die Notiz aus, bevor du die Notiz abspeicherst! </p>
+    </div>
+  </div>
+
+  <div class="header">
+    <div class="content" id="content">
+      <div class="navBar"><img class="img" onclick="renderNotePad()" src="./icon/android-chrome-192x192.png"
+          alt="Glühbirne">
+        <img class="img" onclick="renderTrash()" src="./icon/papierkorb.png" alt="Papierkorb">
+      </div>
+    </div>
+  </div>
+  <div></div>
+  </div>
+
+</body>
+
+</html>
